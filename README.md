@@ -1,7 +1,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/41bq5p54wytq64fn?svg=true)](https://ci.appveyor.com/project/SubHunt/ahj-5-forms)
 
+![CI](https://github.com/SubHunt/ahj_4_testing/actions/workflows/web.yml/badge.svg)
 
-
+github-pages deployment - https://subhunt.github.io/ahj_5_forms/
 
 
 # Домашнее задание к занятию "Работа с HTML-формами"
