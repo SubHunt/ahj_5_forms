@@ -1,5 +1,5 @@
 {
-  "name": "ahj_4_testing",
+  "name": "ahj_5_forms",
   "version": "1.0.6",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SubHunt/ahj_4_testing.git"
+    "url": "git+https://github.com/SubHunt/ahj_5_forms.git"
   },
   "author": "SubHunt",
   "license": "ISC",

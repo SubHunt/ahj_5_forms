@@ -36,40 +36,35 @@ describe('Page start', () => {
   test('Form should render on page start', async () => {
     await page.goto('http://localhost:9000');
 
-    await page.waitForSelector('.card-form-widget');
+    await page.waitForSelector('.popover');
   });
 
 
-  test('Form input should add .valid class if card is valid', async () => {
+  test('Show popover', async () => {
     await page.goto('http://localhost:9000');
 
-    await page.waitForSelector('.card-form-widget');
+    await page.waitForSelector('.popover');
 
-    const form = await page.$('.card-form-widget');
-    const input = await form.$('.input');
-    const submit = await form.$('.submit');
+    const btn = await page.$('.btn');
+    await btn.click();
 
-    await input.type('4485038819487915');
-    await submit.click();
+    await page.waitForSelector('.visible');
+  });
 
-    await page.waitForSelector('.card-form-widget .input.valid');
+  test('Hide popover', async () => {
+
+    await page.goto('http://localhost:9000');
+
+    await page.waitForSelector('.popover');
+
+    const btn = await page.$('.btn');
+    await btn.click();
+	await btn.click();
+	const popover = await page.$('.visible');
+	expect(popover).toBeNull();
+
   });
   
-  test('Form input should add .invalid class if card is not valid', async () => {
-    
-    await page.goto('http://localhost:9000');
-
-    await page.waitForSelector('.card-form-widget');
-
-    const form = await page.$('.card-form-widget');
-    const input = await form.$('.input');
-    const submit = await form.$('.submit');
-
-    await input.type('4485038819487000');
-    await submit.click();
-
-    await page.waitForSelector('.card-form-widget .input.invalid');
-  });
   
   afterAll(async () => {
     await browser.close();

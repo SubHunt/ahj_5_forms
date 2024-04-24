@@ -1,10 +1,14 @@
-import CardFormWidget from "./widget";
+import Popover from "./popover";
 
 document.addEventListener('DOMContentLoaded', () => {
 	
-	const container = document.querySelector('.container');
-	const form = new CardFormWidget(container);
+    const popover = new Popover();
+	
+    const btn = document.querySelector('.btn');
+    popover.createPopover(btn);
+	
+    btn.addEventListener('click', () => {
+        popover.togglePopover();
+    });
 
-
-	form.bindToDOM();
 })

@@ -1,43 +1,47 @@
-/* 
-h1 {
-    justify-content: center;
-    display: flex;
+* {
+    box-sizing: border-box;
 }
 
-.invalid {
-    color: red;
+.container {
+    width: 100%;
+    padding: 45%;
 }
 
-.valid {
-    color: green;
-}
-
-.cards {
-    justify-content: center;
-    display: flex;
-    padding: 10px 0;
-}
-
-.card {
-	opacity: 0.2;	
-    width: 39px;
-    height: 25px;
-    margin-right: 4px;
-    border: 1px solid gray;
-    border-radius: 4px;
-}
-
-.active-card {
-	opacity: 1;	
-}
-
-.card-form-widget {
-    justify-content: center;
-    display: flex;
-}
-
-.submit {
-    margin: auto 10px;
+.btn {
+    background-color: rgb(218,59,74);
+    font-size: 20px;
     color: white;
-    background-color: green;
-} */
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+}
+
+.popover {
+    display: block;
+    position: absolute;
+    max-width: 276px;
+    margin-bottom: 8px;
+    z-index: 999;
+    border: 1px solid rgba(0,0,0,.2);
+    transition: opacity .5s linear;
+    opacity: 0;
+}
+
+.popover-header {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.popover-body {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.visible {
+    opacity: 1;
+}

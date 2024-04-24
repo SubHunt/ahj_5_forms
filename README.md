@@ -1,3 +1,7 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/41bq5p54wytq64fn?svg=true)](https://ci.appveyor.com/project/SubHunt/ahj-5-forms)
+
+
+
 # Домашнее задание к занятию "Работа с HTML-формами"
 
 Правила сдачи задания:
