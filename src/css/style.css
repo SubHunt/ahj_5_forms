@@ -1,0 +1,43 @@
+/* 
+h1 {
+    justify-content: center;
+    display: flex;
+}
+
+.invalid {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
+
+.cards {
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+}
+
+.card {
+	opacity: 0.2;	
+    width: 39px;
+    height: 25px;
+    margin-right: 4px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.active-card {
+	opacity: 1;	
+}
+
+.card-form-widget {
+    justify-content: center;
+    display: flex;
+}
+
+.submit {
+    margin: auto 10px;
+    color: white;
+    background-color: green;
+} */
